@@ -8,8 +8,6 @@ import {
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 
-export const APOLLO_STATE_PROP_NAME = "__APOLLO_STATE__";
-
 // On the client, we store the Apollo Client in the following variable.
 // This prevents the client from reinitializing between page transitions.
 let globalApolloClient: ApolloClient<NormalizedCacheObject>;
